@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// Application entry point. Manage routes with React Router.
 function App() {
   const [count, setCount] = useState(0)
 

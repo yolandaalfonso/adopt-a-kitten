@@ -1,0 +1,1 @@
+// Home page that introduces the project and allows you to navigate to the kitten slider (CatsSlider.jsx).
