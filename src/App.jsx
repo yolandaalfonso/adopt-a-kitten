@@ -1,7 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from './pages/HomePage';
-import AdoptPage from './pages/AdoptPage'
+import appRoutes from "./routes/appRoutes"; // When imported we can comment the next 2 imports. Our "App.jsx" becomes cleaner and more scalable.
+// import HomePage from './pages/HomePage';
+// import AdoptPage from './pages/AdoptPage'
 import "./App.css";
 
 /*
@@ -17,8 +18,10 @@ function App() {
       {/* <Header /> */}
 
       <Routes> {/* It defines the routing rules. Acts as a container for all our individual <Route> definitions */}
-        <Route path="/" element={<HomePage/>}/> {/* Route for the Home Page. When the URL is "/", HomePage Component is shown */}
-        <Route path="/adopt" element={<AdoptPage/>}/> {/* Route for the Adoption Page. When the URL is "/adopt", AdoptPage Component is shown */}
+        {/* (!) Map over our appRoutes Array of Objects to create Route Components */}
+        {appRoutes.map((route, index) => (
+          <Route key={index} path={route.path} element={route.element}/>
+        ))}
       </Routes>
 
       {/* TODO: Place a FOOTER here that appears on all pages */}
