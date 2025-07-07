@@ -1,0 +1,1 @@
+// Service that obtains images of kittens from The Cat API.

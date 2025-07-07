@@ -1,0 +1,1 @@
+// Adoption button that redirects to the adoption page.

@@ -1,0 +1,1 @@
+// Component that handles slider logic and navigation between cards.
