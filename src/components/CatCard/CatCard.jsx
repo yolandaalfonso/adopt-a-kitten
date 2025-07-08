@@ -1,0 +1,1 @@
+// Individual card showing the kitten's image and the adoption button.
