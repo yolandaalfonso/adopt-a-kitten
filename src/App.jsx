@@ -1,8 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import appRoutes from "./routes/appRoutes"; // When imported we can comment the next 2 imports. Our "App.jsx" becomes cleaner and more scalable.
-// import HomePage from './pages/HomePage';
-// import AdoptPage from './pages/AdoptPage'
+import appRoutes from "./routes/appRoutes"; // When imported our "App.jsx" becomes cleaner and more scalable.
+import { Footer } from "./components/Footer/Footer";
 import "./App.css";
 
 /*
@@ -25,7 +24,8 @@ function App() {
       </Routes>
 
       {/* TODO: Place a FOOTER here that appears on all pages */}
-      {/* <Footer /> */}
+      <Footer />
+
     </div>
   );
 }
