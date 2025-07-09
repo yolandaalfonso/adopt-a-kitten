@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom' // Import Link for navigation.
+import './Button.css'
 // import CSS STYLES
 
 // Adoption button that redirects to the adoption page.
-export const Button = () => {
+const Button = ({ text = "Click me", to = "/" }) => {
   return (
-     //The Link Component creates an accessible link that, when clicked,
-     //navigates to the specified "to" path without a full page reload. 
-    <Link to="/adopt" className="adopt-button"> {/* className is added for styling purposes! */}
-        Adopt Me! 🐧
-    </Link> 
-  )
-}
+    <Link to={to} className="buttonWithProps">
+      {text}
+    </Link>
+  );
+};
 
 export default Button

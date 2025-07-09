@@ -11,7 +11,7 @@ export const HomePage = () => {
         <p>You are currently on <code>HomePage.jsx</code></p>
         <p>Explore adorable kittens and consider adopting one 🐈</p>
         <CatsSlider /> {/* The Slider Component can be place here */}
-        <Button /> {/* Render the "Adopt Me!" Button Component */}
+        <Button text="Adopta un gatito🐱" to="/adopt"/> 
     </div>
   )
 }
