@@ -5,3 +5,11 @@
   CSS custom properties for colors, spacing), and generic layout styles that define the overall structure
   and appearance of the application, ensuring a consistent visual baseline across all pages and components.
 */
+
+/* Applies correctly "normalize.css" as the very first layer of styling*/
+@import 'normalize.css';
+
+/* This is our custom "reset.css" (Its handle the global reset)*/
+* {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
