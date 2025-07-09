@@ -75,7 +75,7 @@ export const Footer = () => {
             {/* Copyright & Legal Links */}
             <div className="footer-legal">
                 <p className="footer-copyright">
-                    &copy; 2024 MiauMatch. Todos los derechos reservados.
+                    &copy; 2025 MiauMatch (!)ICON
                 </p>
                 <div className="footer-legal-links">
                     <a href="#privacy-policy" className="footer-link">
@@ -86,15 +86,22 @@ export const Footer = () => {
                         Política de cookies
                     </a>
                     <span className="footer-separator">|</span>
-                    <a href="legal-notice" className="footer-link">
-                        Aviso legal
+                    <a href="#miauMatch-dev-team" className="footer-link">
+                        Desarrollado por Factoría F5
                     </a>
                 </div>
             </div>
 
             {/* Social Media Icons */}
-            <div className="footer-social">
-                {/* TODO: Configure Font Awesome icons in index.html or main.jsx! */}
+            <address className="footer-social">
+                {/* TODO: Configure Font Awesome icons in index.html or main.jsx or https://docs.fontawesome.com/web/use-with/react */}
+                 <a
+                    href="tel:+34984251323"
+                    className="social-icon"
+                    arial-label="Phone"
+                >
+                    (!)ICON +34 984 251 323
+                </a>
                 <a
                     href="https://instagram.com"
                     target="_blank"
@@ -102,7 +109,7 @@ export const Footer = () => {
                     className="social-icon"
                     arial-label="Instagram"
                 >
-                    <i className="fab fa-instagram"></i>
+                    (!)ICON @miaumatch {/* <i className="fab fa-instagram"></i> */}
                 </a>
                 <a
                     href="https://facebook.com"
@@ -111,27 +118,9 @@ export const Footer = () => {
                     className="social-icon"
                     arial-label="Facebook"
                 >
-                    <i className="fab fa-facebook-f"></i>
+                    (!)ICON MiauMatch{/* <i className="fab fa-facebook-f"></i> */}
                 </a>
-                <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-icon"
-                    arial-label="Twitter"
-                >
-                    <i className="fab fa-twitter"></i>
-                </a>
-                <a
-                    href="https://youtube.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-icon"
-                    aria-label="YouTube"
-                >
-                    <i className="fab fa-youtube"></i>
-                </a>
-            </div>
+            </address>
       </div> {/* End of footer-bottom */}
     </footer>
   );
