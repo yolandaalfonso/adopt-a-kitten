@@ -73,3 +73,22 @@ export const fetchCatsByBreed = async (breedId, limit = 10) => {
         return [];
     }
 };
+
+/**
+ * Trae la información completa de un gato por su ID.
+ * Incluye imagen, raza, descripción, temperamento, etc.
+ * @param {string} catId - ID de la imagen del gato (por ejemplo: "4-5SzDNIL")
+ * @returns {Promise<Object|null>}
+ */
+export const fetchCatById = async (catId) => {
+    try {
+        const res = await fetch(`${API_URL}/images/${catId}`, {
+            headers: getHeaders()
+        });
+        if (!res.ok) throw new Error('Cat not found');
+        return await res.json();
+    } catch (error) {
+        console.error(`Error fetching cat with ID "${catId}":`, error);
+        return null;
+    }
+};
