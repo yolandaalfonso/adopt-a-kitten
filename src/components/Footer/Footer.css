@@ -82,6 +82,15 @@
     text-decoration: none;
     font-size: 1rem; /* Size of the icons */
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition for hover */
+    display: flex; /* Make the link a flex container */
+    align-items: center; /* Vertically center icon & text */
+    gap: 0.5rem; /* Space between the icon and the text */
+}
+
+.social-icon img {
+  width: 20px; /* Set a specific width for the SVG*/
+  height: 20px; /* Set a specific height for the SVG */
+  vertical-align: middle; /* Help align the image with the text */
 }
 
 /* Hover effect for social media icons */
