@@ -99,6 +99,11 @@
     transform: translateY(-3px); /* Slight lift effect on hover */
 }
 
+/* Hide text by default on small screens */
+.icon-text {
+    display: none;
+}
+
 /* Styles for the bottom section of the footer */
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2); /* A subtle white line at the top */
@@ -108,6 +113,12 @@
     flex-direction: column; /* Stack items vertically by default in small screens */
     align-items: center; /* Center items horizontally when stacked */
     gap: 1.5rem; /* Space between "legal section" and "social icons" */
+}
+
+.miauMatch-icon {
+  width: 20px; /* Set a specific width for the SVG*/
+  height: 20px; /* Set a specific height for the SVG */
+  vertical-align: middle; /* Help align the image with the text */
 }
 
 /* Styles for the copyright text */
@@ -174,6 +185,11 @@ span {
     text-align: left; /* Align legal text to the left */
     justify-content: space-around; /* Align elements to the center */
     align-items: baseline; 
+  }
+
+  /* Show icon text on larger screens */
+  .icon-text {
+      display: inline; /* Or 'inline-block' for more control */
   }
 
   span {

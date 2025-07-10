@@ -4,6 +4,7 @@ import "./Footer.css"; // Import the CSS file for styling this Component.
 import phoneIcon from '../../assets/whatsapp-icon.svg'
 import instagramIcon from '../../assets/instagram-icon.svg'
 import facebookIcon from '../../assets/facebook-icon.svg'
+import catFeetsIcon from '../../assets/cat-feets-icon.svg'
 
 /**
  * Footer Component
@@ -81,7 +82,7 @@ export const Footer = () => {
                 arial-label="Phone"
             >
                 <img src={phoneIcon} 
-	 alt="Phone Logo"/> +34 984 251 323
+	 alt="Phone Logo"/><span className="icon-text">+34 984 251 323</span>
             </a>
             <a
                 href="https://instagram.com"
@@ -91,7 +92,7 @@ export const Footer = () => {
                 arial-label="Instagram"
             >
                 <img src={instagramIcon} 
-	 alt="Instagram Logo"/> @miaumatch {/* <i className="fab fa-instagram"></i> */}
+	 alt="Instagram Logo"/><span className="icon-text">@miaumatch</span> 
             </a>
             <a
                 href="https://facebook.com"
@@ -101,7 +102,7 @@ export const Footer = () => {
                 arial-label="Facebook"
             >
                 <img src={facebookIcon} 
-	 alt="facebook Logo"/> MiauMatch{/* <i className="fab fa-facebook-f"></i> */}
+	 alt="facebook Logo"/><span className="icon-text">MiauMatch</span>
             </a>
         </address>
       </div> {/* End of footer-links-container */}
@@ -111,7 +112,8 @@ export const Footer = () => {
             {/* Copyright & Legal Links */}
             <div className="footer-legal">
                 <p className="footer-copyright">
-                    &copy; 2025 MiauMatch (!)ICON
+                    &copy; 2025 MiauMatch <img className="miauMatch-icon" src={catFeetsIcon} 
+	 alt="MiauMatch Logo"/>
                 </p>
                 <span className="footer-separator">|</span>
                 <a href="#privacy-policy" className="footer-link">
