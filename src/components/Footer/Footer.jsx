@@ -67,8 +67,37 @@ export const Footer = () => {
                 </li>
           </ul>
         </div>
-      </div>{" "}
-      {/* End of footer-links-container */}
+
+        {/* Social Media Icons */}
+        <address className="footer-social">
+            {/* TODO: Configure Font Awesome icons in index.html or main.jsx or https://docs.fontawesome.com/web/use-with/react */}
+              <a
+                href="tel:+34984251323"
+                className="social-icon"
+                arial-label="Phone"
+            >
+                (!)ICON +34 984 251 323
+            </a>
+            <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                arial-label="Instagram"
+            >
+                (!)ICON @miaumatch {/* <i className="fab fa-instagram"></i> */}
+            </a>
+            <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                arial-label="Facebook"
+            >
+                (!)ICON MiauMatch{/* <i className="fab fa-facebook-f"></i> */}
+            </a>
+        </address>
+      </div> {/* End of footer-links-container */}
 
       {/* Bottom section of the footer for copyright, legal, and social media */}
       <div className="footer-bottom">
@@ -77,50 +106,19 @@ export const Footer = () => {
                 <p className="footer-copyright">
                     &copy; 2025 MiauMatch (!)ICON
                 </p>
-                <div className="footer-legal-links">
-                    <a href="#privacy-policy" className="footer-link">
-                        Política de privacidad
-                    </a>
-                    <span className="footer-separator">|</span> {/* Separator for readability */}
-                    <a href="#cookie-policy" className="footer-link">
-                        Política de cookies
-                    </a>
-                    <span className="footer-separator">|</span>
-                    <a href="#miauMatch-dev-team" className="footer-link">
-                        Desarrollado por Factoría F5
-                    </a>
-                </div>
+                <span className="footer-separator">|</span>
+                <a href="#privacy-policy" className="footer-link">
+                    Política de privacidad
+                </a>
+                <span className="footer-separator">|</span> 
+                <a href="#cookie-policy" className="footer-link">
+                    Política de cookies
+                </a>
+                <span className="footer-separator">|</span>
+                <a href="#miauMatch-dev-team" className="footer-link">
+                    Desarrollado por Factoría F5
+                </a>
             </div>
-
-            {/* Social Media Icons */}
-            <address className="footer-social">
-                {/* TODO: Configure Font Awesome icons in index.html or main.jsx or https://docs.fontawesome.com/web/use-with/react */}
-                 <a
-                    href="tel:+34984251323"
-                    className="social-icon"
-                    arial-label="Phone"
-                >
-                    (!)ICON +34 984 251 323
-                </a>
-                <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-icon"
-                    arial-label="Instagram"
-                >
-                    (!)ICON @miaumatch {/* <i className="fab fa-instagram"></i> */}
-                </a>
-                <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-icon"
-                    arial-label="Facebook"
-                >
-                    (!)ICON MiauMatch{/* <i className="fab fa-facebook-f"></i> */}
-                </a>
-            </address>
       </div> {/* End of footer-bottom */}
     </footer>
   );
