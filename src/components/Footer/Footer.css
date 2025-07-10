@@ -1,0 +1,188 @@
+/*
+ * Footer Styles
+ * 
+ * This stylesheet defines the visual appearance and responsiveness
+ * of the Footer Component. It uses Flexbox for layout and media queries
+ * to adapt to different screen sizes.
+*/
+
+/* Base styles for the main footer element */
+.footer {
+    background-color: #ff8c42; /* TODO: Check for the right color: Orange/peach color */
+    color: #ffffff;
+    padding: 1.5rem;
+    font-family: 'Inter', sans-serif; /* TODO: Include 'Inter' */
+    text-align: center;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    width: 100%; /* Ensure footer takes full width */
+}
+
+/* Styles for the container holding the link columns */
+.footer-links-container{
+    max-width: 1200px; /* Max width for the content, keeps it from streching too wide */
+    margin: auto;
+    display:flex; /* Enable Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow columns to wrap to the next line on smaller screens */
+    justify-content: space-around; /* Distribute columns evenly with space around them */
+    gap: 2rem; /* Space between columns */
+    padding: 0 1rem; /* Small horizontal padding for content inside container */
+}
+
+/* Styles for each individual footer column */
+.footer-column{
+    flex: 1; /* Allow columns to grow and shrink */
+    min-width: 180px; /* Minimum width before wrapping to a new line */
+    text-align: center; 
+}
+
+/* Styles for the column titles (e.g. "Nosotros") */
+.footer-column-title {
+    font-size: 1.2rem; /* Slightly larger font size for titles */
+    margin-top: 0; /* Remove default margin to align with social media section (.footer-social)*/
+    margin-bottom: 1rem; /* Space bellow the title */
+    font-weight: bold; /* Make titles bold */
+    color: #ffffff; /* Ensure title color is white */
+}
+
+/* Styles for the unordered lists within columns */
+.footer-list {
+    list-style: none; /* Remove default bullet points from lists */
+    padding: 0; /* Remove default padding from lists */
+    margin: 0; /* Remove default margin from lists */
+}
+
+/* Styles for individual links in the footer */
+.footer-link {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 0.95rem; /* Slightly smaller font size for links */
+    margin-bottom: 0.7rem; /* Space between links */
+    display: block; /* Make links block-level to apply margin-bottom */
+    transition: color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for footer links */
+.footer-link:hover{
+    color: #f0f0f0; /* Slightly lighter white on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Styles for social media icons container */
+.footer-social {
+    width: 100%;
+    display: flex; /* Enable Flexbox for social icons */
+    gap: 1rem; /* Space between icons */
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Styles for individual social media icons */ /* TODO: It should only show icons without text or telephone number!!!*/
+.social-icon {
+    color: #ffffff; /* White color for icons */
+    text-decoration: none;
+    font-size: 1rem; /* Size of the icons */
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth transition for hover */
+}
+
+/* Hover effect for social media icons */
+.social-icon:hover {
+    color: #f0f0f0; /* Slightly lighter white on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Styles for the bottom section of the footer */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* A subtle white line at the top */
+    margin-top: 1rem; /* Margin above the border-top */
+    padding: 1rem 1rem 0 1rem;
+    display: flex; /* Enable Flexbox for horizontal alignment */
+    flex-direction: column; /* Stack items vertically by default in small screens */
+    align-items: center; /* Center items horizontally when stacked */
+    gap: 1.5rem; /* Space between "legal section" and "social icons" */
+}
+
+/* Styles for the copyright text */
+.footer-copyright {
+    font-size: 0.85rem; /* Smaller font size for copyright */
+    margin-top: 0;
+    margin-bottom: 0.7rem; /* Space between links */
+    color: rgba(255, 255, 255, 0.8) /* Slightly transparent white */
+}
+
+/* Styles for the legal links container */
+.footer-legal {
+    width: 75%;
+    margin: auto;
+    display: flex; /* Enable Flexbox for horizontal layout of legal links */
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+    justify-content: space-around; /* Center legal links */
+    align-items: center;
+}
+
+span {
+    display:none;
+}
+
+/* Styles for the separators between legal links */
+.footer-separator {
+    color: rgba(255, 255, 255, 0.6); /* Slightly transparent white for separators */
+    font-size: 0.85rem;
+}
+
+/*
+ * Media Queries for Responsiveness
+ * Responsive Design scales 1024+ px, 1023-768px, 767-320px
+*/
+
+/* For tablets and larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+  .footer-links-container {
+    justify-content: space-between; /* Distribute columns more widely */
+    gap: 1.5rem; /* Adjust gap */
+  }
+
+  .footer-column {
+    flex: 1; /* Allow columns to take equal space */
+    min-width: unset; /* Remove min-width constraint */
+    text-align: left; /* Align text to the left within each column */
+  }
+
+  .footer-social{
+    width: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Space out copyright/legal and social */
+    align-items: center; /* Align items vertically in the center */
+  }
+
+  .footer-legal {
+    flex-direction: row;
+    text-align: left; /* Align legal text to the left */
+    justify-content: space-around; /* Align elements to the center */
+    align-items: baseline; 
+  }
+
+  span {
+    display: inline;
+  }
+}
+
+/* For desktop screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 4rem 2rem; /* More padding on larger screens */
+  }
+
+  .footer-links-container {
+    gap: 3rem; /* Increase gap between columns */
+  }
+
+  .footer-column {
+    flex: 1; /* Ensure even distribution */
+  }
+}
