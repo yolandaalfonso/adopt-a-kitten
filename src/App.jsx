@@ -4,6 +4,7 @@ import appRoutes from "./routes/appRoutes";
 import Layout from "./components/Layout/Layout";
 import HomePage from "./pages/HomePage";
 import AdoptPage from "./pages/AdoptPage";
+import Header from "./components/Header/Header";
 // When imported we can comment the next 2 imports. Our "App.jsx" becomes cleaner and more scalable.
 // import HomePage from './pages/HomePage';
 // import AdoptPage from './pages/AdoptPage'
