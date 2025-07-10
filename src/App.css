@@ -4,3 +4,13 @@
   or footers (if they are direct children of App) that aren't meant to be universally applied
   to every single element on the page but rather to the primary structural elements of the application's top level.
 */
+
+.app-container {
+  display: flex; /* Makes de App Container a Flex container */
+  flex-direction: column; /* Arranges children  (Header, Routes, Footer) in a column */
+  min-height: 100vh; /* Ensures the container takes at least the full height of viewport*/
+}
+
+.app-container > .footer {
+  margin-top: auto; /*Pushes the footer to the bottom */
+}
