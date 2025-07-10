@@ -1,0 +1,139 @@
+.header-nav {
+    background-color: #FFB085;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 65px;
+}
+
+/* Estilos base para móvil (menos de 768px) */
+.button-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FFB085;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu.open {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.menu ul {
+    list-style: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Elimina borde inferior */
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Para tablets y escritorio (min-width: 768px) */
+@media (min-width: 768px) {
+    .button-toggle {
+        display: none;
+    }
+    
+    .menu {
+        display: flex;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        align-items: center;
+        flex-direction: row;
+        padding: 0;
+    }
+    
+    .menu ul {
+        flex-direction: row; /* FILA horizontal para navbar normal */
+        gap: 1.5rem;
+        width: auto;
+        text-align: left;
+    }
+    
+    .menu li {
+        width: auto;
+        border-bottom: none;
+    }
+    
+    .menu a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        width: auto;
+    }
+}
+
+/* Para escritorio grande (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .header-nav {
+        padding: 1.5rem 2rem;
+    }
+    
+    .menu ul {
+        gap: 2rem;
+    }
+}
