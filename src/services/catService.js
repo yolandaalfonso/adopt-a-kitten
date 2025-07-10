@@ -1,5 +1,5 @@
 const API_URL = 'https://api.thecatapi.com/v1';
-const API_KEY = process.env.REACT_APP_CAT_API_KEY || null;
+const API_KEY = import.meta.env.VITE_CAT_API_KEY || null;
 
 // Header opcional
 const getHeaders = () => {
