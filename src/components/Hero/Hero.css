@@ -1,0 +1,32 @@
+.hero {
+    background-image: url(../../../public/cats.png);
+    background-size: cover;
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 60vh;
+    position: relative;
+}
+
+.hero h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: #6B4F3B;
+    text-align: center;
+    font: 6em sans-serif;
+}
+
+.hero h3{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    color: #6B4F3B;
+    text-align: center;
+    font: 1em sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}

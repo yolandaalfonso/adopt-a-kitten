@@ -1,5 +1,6 @@
 import HomePage from "../pages/HomePage";
 import AdoptPage from "../pages/AdoptPage";
+import Layout from "../components/Layout/Layout";
 
 /*
     The "routes" folder is typically where we centralize
@@ -18,13 +19,13 @@ import AdoptPage from "../pages/AdoptPage";
 const appRoutes = [
     {
         path: '/', // This is the URL path for this route.
-        element: <HomePage /> // This is the React Component to render when this path is active.
+        element: <Layout><HomePage /></Layout> // This is the React Component to render when this path is active.
         // We could add other properties here like, exact:true,
         // or meta data like, name:"Home",
     },
     {
         path: '/adopt',
-        element: <AdoptPage />
+        element: <Layout><AdoptPage /></Layout>
         // name:"Adopt"
     }
     // Add more OBJECTS as our application expands.
