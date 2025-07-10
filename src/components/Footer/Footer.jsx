@@ -1,5 +1,9 @@
 import React from "react"; // We need React to create our Component.
 import "./Footer.css"; // Import the CSS file for styling this Component.
+// Import .SVG icons
+import phoneIcon from '../../assets/whatsapp-icon.svg'
+import instagramIcon from '../../assets/instagram-icon.svg'
+import facebookIcon from '../../assets/facebook-icon.svg'
 
 /**
  * Footer Component
@@ -76,7 +80,8 @@ export const Footer = () => {
                 className="social-icon"
                 arial-label="Phone"
             >
-                (!)ICON +34 984 251 323
+                <img src={phoneIcon} 
+	 alt="Phone Logo"/> +34 984 251 323
             </a>
             <a
                 href="https://instagram.com"
@@ -85,7 +90,8 @@ export const Footer = () => {
                 className="social-icon"
                 arial-label="Instagram"
             >
-                (!)ICON @miaumatch {/* <i className="fab fa-instagram"></i> */}
+                <img src={instagramIcon} 
+	 alt="Instagram Logo"/> @miaumatch {/* <i className="fab fa-instagram"></i> */}
             </a>
             <a
                 href="https://facebook.com"
@@ -94,7 +100,8 @@ export const Footer = () => {
                 className="social-icon"
                 arial-label="Facebook"
             >
-                (!)ICON MiauMatch{/* <i className="fab fa-facebook-f"></i> */}
+                <img src={facebookIcon} 
+	 alt="facebook Logo"/> MiauMatch{/* <i className="fab fa-facebook-f"></i> */}
             </a>
         </address>
       </div> {/* End of footer-links-container */}
