@@ -1,5 +1,7 @@
 const API_URL = 'https://api.thecatapi.com/v1';
-const API_KEY = process.env.REACT_APP_CAT_API_KEY || null;
+// For Create React App or Vite, environment variables are injected at build time
+const API_KEY = import.meta.env.VITE_CAT_API_KEY || null; // For Vite
+// const API_KEY = process.env.REACT_APP_CAT_API_KEY || null; // For Create React App (uncomment if using CRA)
 
 // Header opcional
 const getHeaders = () => {

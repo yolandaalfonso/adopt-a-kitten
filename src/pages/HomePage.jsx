@@ -1,5 +1,5 @@
 import React from "react";
-import CatsSlider from  '../components/CatsSlider/CatsSlider'; 
+import CatsSlider from  '../components/CatsSlider/CatsSlider.jsx'; 
 import Button from "../components/Button/Button";
 // TODO: Import CSS Styles.
 
