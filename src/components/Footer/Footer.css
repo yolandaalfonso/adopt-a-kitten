@@ -8,7 +8,7 @@
 
 /* Base styles for the main footer element */
 .footer {
-    background-color: #ff8c42; /* TODO: Check for the right color: Orange/peach color */
+    background-color: #FFB085; /* TODO: Check for the right color: Orange/peach color */
     color: #ffffff;
     padding: 1.5rem;
     font-family: 'Inter', sans-serif; /* TODO: Include 'Inter' */
@@ -200,7 +200,7 @@ span {
 /* For desktop screens (min-width: 1024px) */
 @media (min-width: 1024px) {
   .footer {
-    padding: 4rem 2rem; /* More padding on larger screens */
+    padding: 1rem; /* More padding on larger screens */
   }
 
   .footer-links-container {
