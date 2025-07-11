@@ -1,0 +1,30 @@
+h3, h4 {
+    color: #6B4F3B;
+}
+
+.testimonios {
+    display: flex;
+    flex-direction: row; 
+    gap: 2rem;            
+    flex-wrap: wrap;     
+    justify-content: center;  
+  }
+
+.testimonio {
+    width: 200px;
+    text-align: center;
+  }
+  
+  
+
+.testimonios img {
+    width: 150px;       
+    height: 150px;       
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonios p {
+    font-style: italic;
+    color: #6B4F3B;
+}
