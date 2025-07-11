@@ -3,7 +3,7 @@ import './CatCard.css'
 import Button from '../Button/Button';
 
 
-const Card = ({ titulo = "Gatito", name = "gatito", descripcion = "Descripcion de gatito", imagen }) => {
+const Card = ({ titulo, name = "gatito", descripcion = "Descripcion de gatito", imagen }) => {
 
   return (
     <div className="cat-card">

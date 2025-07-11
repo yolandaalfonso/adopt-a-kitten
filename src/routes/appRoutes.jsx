@@ -1,5 +1,5 @@
-import HomePage from "../pages/HomePage";
-import AdoptPage from "../pages/AdoptPage";
+import HomePage from "../pages/HomePage/HomePage"
+import AdoptPage from "../pages/AdoptPage/AdoptPage";
 import Layout from "../components/Layout/Layout";
 
 /*

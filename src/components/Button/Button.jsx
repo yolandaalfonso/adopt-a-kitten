@@ -1,15 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom' // Import Link for navigation.
+import { useNavigate } from 'react-router-dom'
 import './Button.css'
 // import CSS STYLES
 
 // Adoption button that redirects to the adoption page.
 const Button = ({ text = "Click me", to = "/" }) => {
+  const navigate = useNavigate()
+  const handleClick = () => {
+    navigate(to)
+  }
+
   return (
-    <Link to={to} className="buttonWithProps">
+    <button className="button-with-props" onClick={handleClick}>
       {text}
-    </Link>
-  );
-};
+    </button>
+  )
+}
+
 
 export default Button

@@ -1,0 +1,7 @@
+.div-gato-const {
+  display: grid;
+  grid-column: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

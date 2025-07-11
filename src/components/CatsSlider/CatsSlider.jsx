@@ -43,7 +43,7 @@ export const CatsSlider = () => {
     {images.map((image, index) => (
       <CatCard
         key={index}
-        titulo={image.breeds?.[0]?.temperament || 'Un adorable gatito'}
+        //titulo={image.breeds?.[0]?.temperament || 'Un adorable gatito'}
         name={image.breeds?.[0]?.name || 'Gatito'}
         descripcion={image.breeds?.[0]?.description || 'Descripción no disponible'}
         imagen={image.url}

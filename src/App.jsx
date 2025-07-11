@@ -3,8 +3,8 @@ import { Footer } from "./components/Footer/Footer";
 import { Routes, Route,  BrowserRouter as Router } from "react-router-dom";
 import appRoutes from "./routes/appRoutes"; 
 import Layout from "./components/Layout/Layout";
-import HomePage from "./pages/HomePage";
-import AdoptPage from "./pages/AdoptPage";
+import HomePage from "./pages/HomePage/HomePage";
+import AdoptPage from "./pages/AdoptPage/AdoptPage";
 import Header from "./components/Header/Header";
 import "./App.css";
 
