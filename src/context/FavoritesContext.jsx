@@ -1,11 +1,9 @@
 // src/context/FavoritesContext.jsx
 
-import React, {createContext, useReducer, useEffect, useContext} from 'react';
+import React, {useReducer, useEffect, useContext} from 'react';
 import { favoritesReducer, initialState } from '../reducers/favoritesReducer';
+import { FavoritesContext } from './FavoritesContext';
 
-// 1. We create the 'Context'.
-//    This is what components will 'consume' to get the 'favorites state' & 'dispatch function'.
-export const FavoritesContext = createContext();
 
 // 2. We create a 'Provider Component'
 //    This component will wrap parts of our application and provide the 'favorites state'.
