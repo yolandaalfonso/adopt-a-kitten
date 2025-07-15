@@ -1,0 +1,48 @@
+.adopt-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+
+.adopt-form__group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.adopt-form__group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.adopt-form__group input,
+.adopt-form__group textarea {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.adopt-form__error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.adopt-form__submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.adopt-form__submit:hover {
+  background-color: #45a049;
+}
+
+
