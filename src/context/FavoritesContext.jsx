@@ -1,12 +1,20 @@
 // src/context/FavoritesContext.jsx
 
-import React, {useReducer, useEffect, useContext} from 'react';
+import React, {useReducer, useEffect} from 'react';
 import { favoritesReducer, initialState } from '../reducers/favoritesReducer';
 import { FavoritesContext } from './FavoritesContext';
 
 
-// 2. We create a 'Provider Component'
-//    This component will wrap parts of our application and provide the 'favorites state'.
+/**
+ * * Part 2 of 3 of 'Context API' (createContext, Provider, useContext)
+ * This is a cornerstone of modern React applications for managing
+ * global state.
+ * 
+ * 2. We create a 'PROVIDER COMPONENT'
+ * This component will wrap parts of our application and provide the 'favorites state'.
+ * It fills that 'hole' (File 1 of 3), making its 'value' prop available to all children
+ * Components that consume the Context.
+ */
 export const FavoritesProvider = ({ children }) => {
     // Try to load favorites from 'localStorage' on initial render.
     // This is a common pattern for 'hydrating state' from 'persistent storage'.
@@ -23,9 +31,12 @@ export const FavoritesProvider = ({ children }) => {
 
     // 'useReducer hook' to manage our 'favorites state'.
     // The 'init' function ensures we load from localStorage at the start.
+    // It perform "lazy initialization" of state. This means the expensive 'localStorage'
+    // read only happens once, when the Component mounts, preventing unnecesary re-reads on 
+    // every re-render.
     const [state, dispatch] = useReducer(favoritesReducer, initialState, init);
 
-    // 3. Use 'useEffect' to save favorites to localStorage whenever they change.
+    // 2.1. Use 'useEffect' to save favorites to localStorage whenever they change.
     // The dependency array '[state.favorites]' ensures this effect runs
     // only when the 'favorites array' within the state changes.
     useEffect(() => {
@@ -37,7 +48,7 @@ export const FavoritesProvider = ({ children }) => {
         }
     }, [state.favorites]); // Dependency Array: re-run effect ONLY if 'state.favorites' changes.
 
-    // The value provided by this context/
+    // The value provided by this context
     // We're providing the entire 'state' object (which contains 'favorites') and the 'dispatch' function.
     const contextValue = {
         favorites: state.favorites,
@@ -49,14 +60,4 @@ export const FavoritesProvider = ({ children }) => {
             {children}
         </FavoritesContext.Provider>
     );
-};
-
-// 4. We create a custom hook for easier consumption
-// This simplifies accessing the context in Components.
-export const useFavorites = () => {
-    const context = useContext(FavoritesContext);
-    if (context === undefined) {
-        throw new Error('useFavorites must be used within a FavoritesProvider');
-    }
-    return context;
 };
