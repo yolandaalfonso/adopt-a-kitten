@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from "react";
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import appRoutes from "./routes/appRoutes";
 import "./App.css";
 import { FavoritesProvider } from "./context/FavoritesContext.jsx";
