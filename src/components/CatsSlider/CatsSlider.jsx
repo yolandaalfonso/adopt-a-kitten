@@ -52,7 +52,7 @@ export const CatsSlider = () => {
   </div>
 </div>
 
-<div className="flex justify-center gap-4 mt-4">
+<div className="buttons-container">
   <button onClick={scrollLeft} className="carousel-button">◀</button>
   <button onClick={scrollRight} className="carousel-button">▶</button>
 </div>

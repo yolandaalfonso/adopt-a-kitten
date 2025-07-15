@@ -11,10 +11,12 @@ const Card = ({ titulo, name = "gatito", descripcion = "Descripcion de gatito", 
       <h3 className="text-lg font-bold mt-2">{name}</h3>
       <h3 className="text-lg font-bold mt-2">{titulo}</h3>
       <p className="text-sm text-gray-600">{descripcion}</p>
-      <Button
-        text="Adóptame"
-        to="/adopt"
-      />
+      <div className="adopt__button-container">
+        <Button
+          text="Adóptame"
+          to="/adopt"
+        />
+      </div>
     </div>
   )
 }
