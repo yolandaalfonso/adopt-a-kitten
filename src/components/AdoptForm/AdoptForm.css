@@ -1,48 +1,121 @@
 .adopt-form {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #f3f3f3;
-  border-radius: 8px;
+    max-width: 100%;
+    margin: 20px 15px;
+    padding: 15px;
+    background: #f3f3f3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.adopt-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
 }
 
 .adopt-form__group {
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+   overflow: visible; 
+    min-height: auto;
 }
 
 .adopt-form__group label {
-  margin-bottom: 5px;
-  font-weight: bold;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .adopt-form__group input,
 .adopt-form__group textarea {
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.adopt-form__textarea {
+    resize: vertical;
+    min-height: 80px;
+     display: block;
 }
 
 .adopt-form__error {
-  color: red;
-  font-size: 12px;
-  margin-top: 4px;
+   color: #ee0b04;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block;
+    height: auto; 
+    min-height: 1em; 
+    line-height: 1.2; 
+    padding: 2px 5px; 
+    background-color: rgba(255, 0, 0, 0.05); 
+    border-radius: 3px;
+    position: static;
+    word-wrap: break-word;
+    white-space: normal;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10; 
 }
 
 .adopt-form__submit {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
 }
 
 .adopt-form__submit:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
+/* Media Query for Larger Screens (Desktop / Tablet) */
+@media (min-width: 768px) {
+    .adopt-form {
+        max-width: 500px; 
+        margin: 40px auto; 
+        padding: 25px; 
+    }
 
+    .adopt-form h2 {
+        font-size: 2em; 
+    }
+
+    .adopt-form__group {
+        margin-bottom: 25px; 
+    }
+
+    .adopt-form__group label {
+        font-size: 1.1em;
+    }
+
+    .adopt-form__group input,
+    .adopt-form__group textarea {
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .adopt-form__error {
+        font-size: 0.9em; 
+    }
+
+    .adopt-form__submit {
+        padding: 10px; 
+        font-size: 1em;
+        width: auto; 
+        margin-top: 20px;
+    }
+}
