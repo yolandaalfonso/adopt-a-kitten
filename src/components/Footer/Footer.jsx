@@ -32,7 +32,7 @@ export const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#contact" className="footer-link">
+              <a href="#contact" className="footer-link" id="contacto">
                 Contacto
               </a>
             </li>
