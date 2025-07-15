@@ -11,8 +11,7 @@ export const HomePage = () => {
   return (
     <div className="home-container">
         <Hero></Hero>
-        <CatsSlider /> {/* The Slider Component can be place here */}
-        <Button text="Adopta un gatito🐱" to="/adopt"/> 
+        <CatsSlider /> {/* The Slider Component can be place here */} 
         <Proceso></Proceso>
         <Testimonios></Testimonios>
     </div>

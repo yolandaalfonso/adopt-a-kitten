@@ -123,3 +123,13 @@
 .carousel-button:active {
   transform: scale(0.95);
 }
+
+.buttons-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
