@@ -3,7 +3,7 @@ import React from "react";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import appRoutes from "./routes/appRoutes";
 import "./App.css";
-import { FavoritesProvider } from "./context/FavoritesContext";
+import { FavoritesProvider } from "./context/FavoritesContext.jsx";
 
 /*
   Application Entry Point. (The Root of our Component Tree)
