@@ -22,11 +22,6 @@ const Card = ({cat, isFavorite, onToogleFavorite}) => {
 
   return (
     <div className="cat-card">
-      <img src={image} alt={name} /> {/* Use 'name' for alt text */}
-      <h3 className="text-lg font-bold mt-2">{name}</h3>
-      <h3 className="text-lg font-bold mt-2">{title}</h3>
-      <p className="text-sm text-gray-600">{description}</p>
-
       {/* Favorite Button/Icon */}
       <div className="favorite-button-container" onClick={handleToogle}>
         {/* Placeholder for favorite icon. //TODO: Replace this with SVG icons */}
@@ -36,6 +31,12 @@ const Card = ({cat, isFavorite, onToogleFavorite}) => {
           <span style={ {cursor: 'pointer', color: 'gray', fontSize: '24px'} }>🤍</span>
         )}
       </div>
+      
+      <img src={image} alt={name} /> {/* Use 'name' for alt text */}
+      <h3 className="text-lg font-bold mt-2">{name}</h3>
+      <h3 className="text-lg font-bold mt-2">{title}</h3>
+      <p className="text-sm text-gray-600">{description}</p>
+
 
       <div className="adopt__button-container">
         <Button
