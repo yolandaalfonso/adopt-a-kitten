@@ -1,7 +1,7 @@
 .cat-card {
   width: 16rem; /* 256px */
   flex-shrink: 0;
-  background-color: #fff;
+  background-color: var(--clr-card);
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
@@ -25,12 +25,12 @@
   font-size: 1.125rem;
   font-weight: bold;
   margin-top: 0.5rem;
-  color: #333;
+  color: var(--clr-text);
 }
 
 .cat-card p {
   font-size: 0.875rem;
-  color: #666;
+  color: var(--clr-text);
   margin-top: 0.25rem;
 }
 

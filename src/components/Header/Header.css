@@ -1,5 +1,5 @@
 .header-nav {
-    background-color: #FFB085;
+    background-color: var(--clr-primary);
     padding: 1rem 2rem;
     position: relative;
 }
@@ -20,6 +20,27 @@
 .logo {
     height: 65px;
 }
+
+.theme-toggle-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.theme-toggle-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: var(--clr-primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .theme-toggle-btn:hover {
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+    /*color: var(--color-texto-boton)*/
+  }
 
 /* Estilos base para móvil (menos de 768px) */
 .button-toggle {
@@ -44,7 +65,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #FFB085;
+    background-color: var(--clr-primary);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }

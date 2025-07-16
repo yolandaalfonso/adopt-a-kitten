@@ -1,6 +1,6 @@
 .button-with-props {
-  background-color: #FFB085;
-  color: rgb(10, 10, 10);
+  background-color: var( --clr-primary);
+  color: var( --clr-text);
   font-size: 16px;
   padding: 10px 20px;
   border: none;
@@ -12,7 +12,7 @@
 
 .button-with-props:hover {
   background-color: #fa5a04;
-  color: antiquewhite;
+  color: var(--clr-text);
   font-weight: bold;
 }
 
