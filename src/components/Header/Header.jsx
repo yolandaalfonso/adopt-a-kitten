@@ -43,13 +43,13 @@ const Header = () => {
                         {theme === 'light' ? '🌙' : '☀️'}
                     </button>
                 </div>
-                <div>
-                  <button onClick={() => handleChange('es')}>ES</button>
-                  <button onClick={() => handleChange('en')}>EN</button>
+                <div className="lang-switcher">
+                  <button className="lang-switcher__button" onClick={() => handleChange('es')}>ES</button>
+                  <button className="lang-switcher__button" onClick={() => handleChange('en')}>EN</button>
                 </div>
             </div>
         </nav>
     );
-};
+}
 
 export default Header;

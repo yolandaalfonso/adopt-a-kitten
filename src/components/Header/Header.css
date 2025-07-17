@@ -111,6 +111,39 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.lang-switcher {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+/* Elemento: botón */
+.lang-switcher__button {
+  background-color: transparent;
+  border: 2px solid var(--clr-text);
+  color: #faf8f8;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.lang-switcher__button:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+/* Modificador opcional si deseas marcar el idioma activo */
+.lang-switcher__button--active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
 /* Tablets y escritorio */
 @media (min-width: 768px) {
     .header__toggle-button {
