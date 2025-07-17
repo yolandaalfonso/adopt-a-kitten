@@ -36,18 +36,21 @@ const FavoritesPage = () => {
 
       {favorites.length === 0 ? (
         <p className="no-favorites-message">
-          Aún no has añadido ningún gatito a tus favoritos. ¡A qué esperas para
+          Aún no has añadido ningún gatito a tus favoritos. ¡A qué esperas para 
           ir a la página de inicio y encontrar adorables gatitos!
         </p>
       ) : (
         <div className="favorites-grid">
           {favorites.map((cat) => {
-            <CatCard
-              key={cat.id} // Use 'cat.id' as the key
-              cat={cat} // Pass the entire 'cat object'
-              isFavorite={true} // In 'FavoritesPage, 'cats' are always favorites
-              onToogleFavorite={handleToggleFavorite} // Allow unfavoriting from here
-            />;
+            console.log("Rendering CatCard for:", cat.id); // TODO: TO_DEL - Good for debugging specific card render
+            return (
+              <CatCard
+                key={cat.id}
+                cat={cat}
+                isFavorite={true}
+                onToggleFavorite={handleToggleFavorite}
+              />
+            );
           })}
         </div>
       )}
