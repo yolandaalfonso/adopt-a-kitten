@@ -39,5 +39,22 @@
         "testimonio3":"I never imagined how much love a rescued kitten could give; Luna changed my life.",
         "testimonio4":"The adoption was easy, transparent, and now I have a faithful friend who waits for me every day.",
         "testimonio5":"Since Mimo arrived, I haven't stopped smiling — he's pure joy on four paws!"
-    }
+    },
+     "form":{
+        "error":{
+            "name":"Invalid name. Only letters and spaces (2-50 characters).",
+            "mail":"Invalid email.",
+            "phone":"Invalid phone number. Only numbers (7-15 digits).",
+            "message":"Message must be between 10 and 300 characters."
+        },
+        "titulo":"Adoption Form",
+        "send":"Send",
+        "message":"Message:",
+        "nombre":"Name:",
+        "email":"Email:",
+        "phone":"Phone:",
+        "enviado":"Sent successfully!",
+        "gracias":"Thank you for your interest in adopting"
+    },
+    "adopt":"Adopt me"
 }

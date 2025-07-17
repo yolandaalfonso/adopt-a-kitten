@@ -39,5 +39,22 @@
         "testimonio3":"Nunca imaginé cuánto amor podía dar un gatito rescatado; Luna me cambió la vida.",
         "testimonio4":"La adopción fue fácil, transparente y ahora tengo un amigo fiel que me espera cada día.",
         "testimonio5":"Desde que llegó Mimo, no paro de sonreír — ¡es pura alegría en cuatro patas!"
-    }
+    },
+    "form":{
+        "error":{
+            "name":"Nombre inválido. Solo letras y espacios (2-50 caracteres).",
+            "mail":"Correo electrónico inválido.",
+            "phone":"Teléfono inválido. Solo números (7-15 dígitos).",
+            "message":"El mensaje debe tener entre 10 y 300 caracteres."
+        },
+        "titulo":"Formulario de Adopción",
+        "send":"Enviar",
+        "message":"Mensaje:",
+        "nombre":"Nombre:",
+        "email":"Correo electrónico:",
+        "phone":"Teléfono:",
+        "enviado":"¡Enviado correctamente!",
+        "gracias":"Gracias por tu interés en adoptar"
+    },
+    "adopt":"Adóptame"
 }
