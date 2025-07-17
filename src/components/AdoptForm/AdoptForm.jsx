@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Modal from "../Modal/Modal"
 import "./AdoptForm.css"
+import { useTranslation } from 'react-i18next'
 
 const AdoptForm=()=>{
+const { t} = useTranslation();
 const [formData, setFormData]=useState(
     {
         name:"",
@@ -24,16 +26,16 @@ const regex = {
     const newErrors = {}
 
     if (!regex.name.test(formData.name)) {
-      newErrors.name = 'Nombre inválido. Solo letras y espacios (2-50 caracteres).'
+      newErrors.name = t('form.error.name') 
     }
     if (!regex.email.test(formData.email)) {
-      newErrors.email = 'Correo electrónico inválido.'
+      newErrors.email = t('form.error.email')
     }
     if (!regex.phone.test(formData.phone)) {
-      newErrors.phone = 'Teléfono inválido. Solo números (7-15 dígitos).'
+      newErrors.phone = t('form.error.phone')
     }
     if (!regex.message.test(formData.message)) {
-      newErrors.message = 'El mensaje debe tener entre 10 y 300 caracteres.'
+      newErrors.message =t('form.error.message') 
     }
 
     return newErrors
@@ -63,38 +65,38 @@ const regex = {
 
 return (
     <div className="adopt-form">
-      <h2>Formulario de Adopción</h2>
+      <h2>{t('form.titulo')}</h2>
      
       <form onSubmit={handleSubmit}>
         <div className="adopt-form__group">
-          <label>Nombre:</label>
+          <label>{t('form.nombre')}</label>
           <input type="text" name="name" value={formData.name} onChange={handleChange} />
           {errors.name && <span className="adopt-form__error">{errors.name}</span>}
         </div>
 
         <div className="adopt-form__group">
-          <label>Correo electrónico:</label>
+          <label>{t('form.email')}</label>
           <input type="email" name="email" value={formData.email} onChange={handleChange} />
           {errors.email && <span className="adopt-form__error">{errors.email}</span>}
         </div>
 
         <div className="adopt-form__group">
-          <label>Teléfono:</label>
+          <label>{t('form.phone')}</label>
           <input type="text" name="phone" value={formData.phone} onChange={handleChange} />
           {errors.phone && <span className="adopt-form__error">{errors.phone}</span>}
         </div>
 
         <div className="adopt-form__group">
-          <label>Mensaje:</label>
+          <label>{t('form.message')}</label>
           <textarea name="message" value={formData.message} onChange={handleChange} />
           {errors.message && <span className="adopt-form__error">{errors.message}</span>}
         </div>
 
-        <button type="submit" className="adopt-form__submit">Enviar</button>
+        <button type="submit" className="adopt-form__submit">{t('form.send')}</button>
       </form>
         <Modal show={showModal} onClose={() => setShowModal(false)}>
-        <h3>¡Enviado correctamente!</h3>
-        <p>Gracias por tu interés en adoptar 😻🐾</p>
+        <h3>{t('form.enviado')}</h3>
+        <p>{t('form.gracias')} 😻🐾</p>
       </Modal>
     </div>
     
