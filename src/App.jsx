@@ -1,12 +1,9 @@
+// src/App.jsx
 import React from "react";
-import { Footer } from "./components/Footer/Footer";
-import { Routes, Route,  BrowserRouter as Router } from "react-router-dom";
-import appRoutes from "./routes/appRoutes"; 
-import Layout from "./components/Layout/Layout";
-import HomePage from "./pages/HomePage/HomePage";
-import AdoptPage from "./pages/AdoptPage/AdoptPage";
-import Header from "./components/Header/Header";
+import { Routes, Route } from "react-router-dom";
+import appRoutes from "./routes/appRoutes";
 import "./App.css";
+import { FavoritesProvider } from "./context/FavoritesContext.jsx";
 import { useTranslation } from 'react-i18next';
 
 /*
@@ -17,32 +14,17 @@ import { useTranslation } from 'react-i18next';
   */
 function App() {
   return (
-    <div className="app-container">
-      {/* TODO: Place a HEADER here that appears on all pages */}
-      {/* <Header /> */}
-
-      <Routes> {/* It defines the routing rules. Acts as a container for all our individual <Route> definitions */}
-        {/* (!) Map over our appRoutes Array of Objects to create Route Components */}
-        {appRoutes.map((route, index) => (
-          <Route key={index} path={route.path} element={route.element}/>
-        ))}
-      </Routes>
-
-      {/* TODO: Place a FOOTER here that appears on all pages */}
-      {/* <Footer />*/}
-
-    </div>
-//  <Router>
-//       <Routes>
-//         {/* Ruta principal con Layout */}
-//         <Route path="/" element={<Layout />}>
-//           {/* Rutas hijas que se renderizan dentro del <Outlet /> */}
-//           <Route index element={<HomePage />} />
-//           <Route path="adopt" element={<AdoptPage />} />
-//         </Route>
-//       </Routes>
-//     </Router>
-
+    <FavoritesProvider>
+      <div className="app-container">
+        <Routes>
+          {/* It defines the routing rules. Acts as a container for all our individual <Route> definitions */}
+          {/* (!) Map over our appRoutes Array of Objects to create Route Components */}
+          {appRoutes.map((route, index) => (
+            <Route key={index} path={route.path} element={route.element} />
+          ))}
+        </Routes>
+      </div>
+    </FavoritesProvider>
   );
 }
 

@@ -1,0 +1,53 @@
+/* src/pages/FavoritesPage/FavoritesPage.css */
+
+.favorites-page-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.favorites-page-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.no-favorites-message {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 50px;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+/* You might want to add some responsive adjustments */
+@media (max-width: 768px) {
+  .favorites-page-title {
+    font-size: 2em;
+  }
+  .favorites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .favorites-page-container {
+    padding: 15px;
+  }
+  .favorites-page-title {
+    font-size: 1.8em;
+  }
+  .no-favorites-message {
+    font-size: 1em;
+  }
+}
