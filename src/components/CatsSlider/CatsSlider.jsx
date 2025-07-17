@@ -69,7 +69,7 @@ export const CatsSlider = () => {
                 key={cat.id || index} // Use cat.id as key if available, fallback to index
                 cat={cat} // Pass the entire 'cat object'
                 isFavorite={isFavorite} // Pass the favorite status
-                onToogleFavorite={handleToggleFavorite} // Pass the toggle function
+                onToggleFavorite={handleToggleFavorite} // Pass the toggle function
               />
             );
           })}
