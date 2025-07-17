@@ -1,30 +1,48 @@
-h3, h4 {
-    color: #6B4F3B;
-}
-
 .testimonios {
-    display: flex;
-    flex-direction: row; 
-    gap: 2rem;            
-    flex-wrap: wrap;     
-    justify-content: center;  
-  }
-
-.testimonio {
-    width: 200px;
-    text-align: center;
-  }
-  
-  
-
-.testimonios img {
-    width: 150px;       
-    height: 150px;       
-    border-radius: 50%;
-    object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.testimonios p {
-    font-style: italic;
-    color: #6B4F3B;
+.testimonios__title {
+  color: var(--clr-text);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.testimonios__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.testimonios__item {
+  width: 200px;
+  text-align: center;
+}
+
+.testimonios__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonios__name {
+  color: var(--clr-text);
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.testimonios__text {
+  font-style: italic;
+  color: var(--clr-text);
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
 }

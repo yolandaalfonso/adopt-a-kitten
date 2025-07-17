@@ -1,17 +1,39 @@
-.proceso-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-  }
-  .imagen img {
-    max-width: 400px;
-    height: auto;
-    border-radius: 12px;
-  }
+.proceso {
+  padding: 2rem;
+}
 
-  h3{
-    justify-content: center;
-    text-align: center; 
-  }
+.proceso__title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.proceso__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.proceso__image {
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.proceso__steps {
+  max-width: 500px;
+}
+
+.proceso__list {
+  list-style: decimal inside;
+  padding: 0;
+  margin: 0;
+}
+
+.proceso__step {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
