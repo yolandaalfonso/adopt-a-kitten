@@ -1,21 +1,25 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './Button.css'
-// import CSS STYLES
 
-// Adoption button that redirects to the adoption page.
-const Button = ({ text = "Click me", to = "/" }) => {
+const Button = ({ text = "Click me", to = "/", disabled = false }) => {
   const navigate = useNavigate()
+
   const handleClick = () => {
-    navigate(to)
+    if (!disabled) {
+      navigate(to)
+    }
   }
 
   return (
-    <button className="button-with-props" onClick={handleClick}>
+    <button
+      className={`button${disabled ? ' button--disabled' : ''}`}
+      onClick={handleClick}
+      disabled={disabled}
+    >
       {text}
     </button>
   )
 }
-
 
 export default Button

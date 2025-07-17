@@ -1,6 +1,6 @@
-.button-with-props {
-  background-color: var( --clr-primary);
-  color: var( --clr-text);
+.button {
+  background-color: var(--clr-primary);
+  color: var(--clr-text);
   font-size: 16px;
   padding: 10px 20px;
   border: none;
@@ -10,17 +10,17 @@
   transition: background-color 0.3s ease;
 }
 
-.button-with-props:hover {
+.button:hover {
   background-color: #fa5a04;
   color: var(--clr-text);
   font-weight: bold;
 }
 
-.button-with-props:focus {
+.button:focus {
   outline: 2px solid #333;
 }
 
-.button-with-props--disabled {
+.button--disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
