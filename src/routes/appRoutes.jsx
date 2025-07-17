@@ -32,7 +32,7 @@ const appRoutes = [
     {
         path: '/favorites',
         element: <Layout><FavoritesPage /></Layout>
-        // name:"Adopt"
+        // name:"Favorites"
     }
     // Add more OBJECTS as our application expands.
     // e.g. Example of a "dynamic route":
