@@ -1,0 +1,9 @@
+{
+    "header":{
+       "inicio":"INICIO",
+       "adopta":"ADOPTA",
+       "favoritos":"FAVORITOS",
+       "noticias":"NOTICIAS",
+       "contacto":"CONTACTO"
+    }
+}
