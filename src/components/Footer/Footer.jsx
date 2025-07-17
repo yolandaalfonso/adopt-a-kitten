@@ -5,6 +5,7 @@ import phoneIcon from '../../assets/whatsapp-icon.svg'
 import instagramIcon from '../../assets/instagram-icon.svg'
 import facebookIcon from '../../assets/facebook-icon.svg'
 import catFeetsIcon from '../../assets/cat-feets-icon.svg'
+import { useTranslation } from 'react-i18next'
 
 /**
  * Footer Component
@@ -17,6 +18,9 @@ import catFeetsIcon from '../../assets/cat-feets-icon.svg'
  *
  */
 export const Footer = () => {
+  const { t} = useTranslation();
+  
+
   return (
     // The main footer element. We'll apply general footer styles here.
     <footer className="footer">
@@ -24,16 +28,16 @@ export const Footer = () => {
       <div className="footer-links-container">
         {/* Column 1: About Us (Nosotros [SP]) */}
         <div className="footer-column">
-          <h3 className="footer-column-title">Nosotros</h3>
+          <h3 className="footer-column-title">{t('footer.nosotros')}</h3>
           <ul className="footer-list">
             <li>
-              <a href="#who-we-are" className="footer-link">
-                Conócenos
+              <a href="#who-we-are" className="footer-link">{t('footer.conocenos')}
+                
               </a>
             </li>
             <li>
               <a href="#contact" className="footer-link" id="contacto">
-                Contacto
+                {t('footer.contacto')}
               </a>
             </li>
           </ul>
@@ -41,16 +45,16 @@ export const Footer = () => {
 
         {/* Column 2: Collaborate (Colabora [SP]) */}
         <div className="footer-column">
-          <h3 className="footer-column-title">Colabora</h3>
+          <h3 className="footer-column-title">{t('footer.colabora')}</h3>
           <ul className="footer-list">
                 <li>
                     <a href="#adopt" className="footer-link">
-                        Adopta
+                        {t('footer.adopta')}
                     </a>
                 </li>
                 <li>
                     <a href="#volunterring" className="footer-link">
-                        <abbr title="¡Hazte voluntario!">Échanos una pata</abbr> {/* TODO: href ? #volunterring : #donations */}
+                        <abbr title="¡Hazte voluntario!">{t('footer.ayuda')}</abbr> {/* TODO: href ? #volunterring : #donations */}
                     </a>
                 </li>
           </ul>
@@ -58,16 +62,16 @@ export const Footer = () => {
 
         {/* Column 3: Learn More (Saber más [SP]) */}
         <div className="footer-column">
-          <h3 className="footer-column-title">Saber más</h3>
+          <h3 className="footer-column-title">{t('footer.mas')}</h3>
           <ul className="footer-list">
                 <li>
                 <a href="#faq" className="footer-link">
-                    Preguntas frecuentes
+                    {t('footer.preguntas')}
                 </a>
                 </li>
                 <li>
                 <a href="#news" className="footer-link">
-                    Noticias
+                   {t('footer.noticias')} 
                 </a>
                 </li>
           </ul>
@@ -117,15 +121,15 @@ export const Footer = () => {
                 </p>
                 <span className="footer-separator">|</span>
                 <a href="#privacy-policy" className="footer-link">
-                    Política de privacidad
+                    {t('footer.politica')}
                 </a>
                 <span className="footer-separator">|</span> 
                 <a href="#cookie-policy" className="footer-link">
-                    Política de cookies
+                     {t('footer.cookies')}
                 </a>
                 <span className="footer-separator">|</span>
                 <a href="#miauMatch-dev-team" className="footer-link">
-                    Desarrollado por Factoría F5
+                    {t('footer.desarrollado')}
                 </a>
             </div>
       </div> {/* End of footer-bottom */}

@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import AdoptPage from "./pages/AdoptPage/AdoptPage";
 import Header from "./components/Header/Header";
 import "./App.css";
+import { useTranslation } from 'react-i18next';
 
 /*
   Application Entry Point. (The Root of our Component Tree)

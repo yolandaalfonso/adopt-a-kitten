@@ -11,9 +11,11 @@
     "test": "vitest"
   },
   "dependencies": {
+    "i18next": "^25.3.2",
     "normalize.css": "^8.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-i18next": "^15.6.0",
     "react-router-dom": "^7.6.3"
   },
   "devDependencies": {

@@ -1,13 +1,15 @@
 import React from 'react';
 import './Hero.css';
+import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
+  const { t} = useTranslation();
   return (
     <div className="hero">
       <h1 className="hero__title">MiauMatch</h1>
       <h3 className="hero__subtitle">
-        Descubre gatitos que buscan una segunda oportunidad.<br />
-        Adopta, salva una vida y a tu compañero ideal.
+        {t('hero.message1')}<br />
+        {t('hero.message2')}
       </h3>
     </div>
   );

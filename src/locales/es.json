@@ -1,0 +1,43 @@
+{
+    "header":{
+       "inicio":"INICIO",
+       "adopta":"ADOPTA",
+       "favoritos":"FAVORITOS",
+       "noticias":"NOTICIAS",
+       "contacto":"CONTACTO"
+    },
+    "footer":{
+        "nosotros":"Nosotros",
+        "conocenos":"Conócenos",
+        "contacto":"Contacto",
+        "colabora":"Colabora",
+        "adopta":"Adopta",
+        "ayuda":"Échanos una pata", 
+        "mas":"Saber más",
+        "preguntas":"Preguntas frecuentes",
+        "noticias":"Noticias",
+        "politica":"Política de privacidad",
+        "cookies":"Política de cookies",
+        "desarrollado":"Desarrollado por Factoría F5"
+    },
+    "hero":{
+        "message1": "Descubre gatitos que buscan una segunda oportunidad.",
+        "message2":"Adopta, salva una vida y a tu compañero ideal."
+
+    },
+    "proceso":{
+        "como":"¿Cómo es el proceso?",
+        "paso1":"Elige a tu futuro gatito.",
+        "paso2":"Rellena el formulario de adopción.",
+        "paso3":"Charlamos contigo para asegurarnos de que haya un match perfecto.",
+        "paso4":"¡Adopta y comienza una nueva aventura juntos!"
+    },
+    "Testimonios":{
+        "testimonios":"Testimonios",
+        "testimonio1":"Adoptar a Nube fue la mejor decisión que podía haber tomado; llena la casa de amor y travesuras.",
+        "testimonio2":"Gracias a MiauMatch, encontré a mi compañero peludo perfecto: Leo no se separa de mí.",
+        "testimonio3":"Nunca imaginé cuánto amor podía dar un gatito rescatado; Luna me cambió la vida.",
+        "testimonio4":"La adopción fue fácil, transparente y ahora tengo un amigo fiel que me espera cada día.",
+        "testimonio5":"Desde que llegó Mimo, no paro de sonreír — ¡es pura alegría en cuatro patas!"
+    }
+}
