@@ -4,29 +4,37 @@ import './CatCard.css'
 import Button from '../Button/Button';
 import { useTranslation } from 'react-i18next'
 
-const Card = ({ titulo, name = "gatito", descripcion = "Descripcion de gatito", imagen }) => {
-    const { t} = useTranslation();
+const Card = ({cat, isFavorite, onToggleFavorite}) => {
+  // Destructure properties from the 'cat' Object directly for cleaner access.
+  const { t} = useTranslation();
+  const { url: image, breeds } = cat;
+  const name = breeds?.[0]?.name || 'A Kitten!';
+  const title = breeds?.[0]?.temperament || 'An adorable kitten!';
+  const description = breeds?.[0]?.description || 'Description not available!';
+  // Function to handle the favorite toggle
+  const handleToggle = () => {
+    // Pass the full 'cat Object' to the 'onToggleFavorite' function
+    // The parent component (CatsSlider) will then dispatch the appropriate action.
+    onToggleFavorite(cat);
+  };
   return (
     <div className="cat-card">
       {/* Favorite Button/Icon */}
       <div className="favorite-button-container" onClick={handleToggle}>
         {/* Placeholder for favorite icon. //TODO: Replace this with SVG icons */}
-        {isFavorite ? (
+         {isFavorite ? (
           <span style={ { cursor: 'pointer', color: 'red', fontSize: '24px'} }>❤️</span>
         ):(
           <span style={ {cursor: 'pointer', color: 'gray', fontSize: '24px'} }>🤍</span>
         )}
       </div>
-      
       <img className="cat-card__image" src={image} alt={name} /> {/* Use 'name' for alt text */}
       <h3 className="cat-card__name">{name}</h3>
       <h3 className="cat-card__title">{title}</h3>
       <p className="cat-card__description">{description}</p>
-
-
       <div className="cat-card__button-container">
         <Button
-          text={t('adopt')}
+          text={t("adopt")}
           to="/adopt"
         />
       </div>
@@ -34,6 +42,8 @@ const Card = ({ titulo, name = "gatito", descripcion = "Descripcion de gatito", 
   )
 }
 export default Card;
+
+
 
 
 
