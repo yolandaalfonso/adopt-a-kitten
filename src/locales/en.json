@@ -5,5 +5,19 @@
        "favoritos":"FAVORITES",
        "noticias":"NEWS",
        "contacto":"CONTACT"
+    },
+    "footer":{
+        "nosotros":"About us",
+        "conocenos":"Meet us",
+        "contacto":"Contact",
+        "colabora":"Colaborate",
+        "adopta":"Adopt",
+        "ayuda":"Lend us a paw", 
+        "mas":"Learn more",
+        "preguntas":"Frequently asked questions",
+        "noticias":"News",
+        "politica":"Privacy Policy",
+        "cookies":"Cookies policy",
+        "desarrollado":"Developed by Factoría F5"
     }
 }
