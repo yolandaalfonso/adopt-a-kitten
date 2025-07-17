@@ -2,22 +2,10 @@
 import React from 'react';
 import './CatCard.css'
 import Button from '../Button/Button';
+import { useTranslation } from 'react-i18next'
 
-const Card = ({cat, isFavorite, onToggleFavorite}) => {
-  // Destructure properties from the 'cat' Object directly for cleaner access.
-  const { url: image, breeds } = cat;
-
-  const name = breeds?.[0]?.name || 'A Kitten!';
-  const title = breeds?.[0]?.temperament || 'An adorable kitten!';
-  const description = breeds?.[0]?.description || 'Description not available!';
-
-  // Function to handle the favorite toggle
-  const handleToggle = () => {
-    // Pass the full 'cat Object' to the 'onToggleFavorite' function
-    // The parent component (CatsSlider) will then dispatch the appropriate action.
-    onToggleFavorite(cat);
-  };
-
+const Card = ({ titulo, name = "gatito", descripcion = "Descripcion de gatito", imagen }) => {
+    const { t} = useTranslation();
   return (
     <div className="cat-card">
       {/* Favorite Button/Icon */}
@@ -38,7 +26,7 @@ const Card = ({cat, isFavorite, onToggleFavorite}) => {
 
       <div className="cat-card__button-container">
         <Button
-          text="Adóptame"
+          text={t('adopt')}
           to="/adopt"
         />
       </div>
