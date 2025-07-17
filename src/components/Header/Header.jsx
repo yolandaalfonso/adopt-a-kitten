@@ -25,11 +25,11 @@ const Header = () => {
 
                 <div className={`header__menu ${menuOpen ? 'header__menu--open' : ''}`}>
                     <ul className="header__menu-list">
-                        <li className="header__menu-item"><a href="#" onClick={() => setMenuOpen(false)}>INICIO</a></li>
-                        <li className="header__menu-item"><a href="#" onClick={() => setMenuOpen(false)}>ADOPTA</a></li>
-                        <li className="header__menu-item"><a href="#" onClick={() => setMenuOpen(false)}>FAVORITOS</a></li>
-                        <li className="header__menu-item"><a href="#" onClick={() => setMenuOpen(false)}>NOTICIAS</a></li>
-                        <li className="header__menu-item"><a href="#" onClick={() => setMenuOpen(false)}>CONTACTO</a></li>
+                        <li className="header__menu-item"><a href="/" onClick={() => setMenuOpen(false)}>INICIO</a></li>
+                        <li className="header__menu-item"><a href="/adopt" onClick={() => setMenuOpen(false)}>ADOPTA</a></li>
+                        <li className="header__menu-item"><a href="/favorites" onClick={() => setMenuOpen(false)}>FAVORITOS</a></li>
+                        <li className="header__menu-item"><a href="https://www.santevet.es/categorias/actualidad-gatos" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>NOTICIAS</a></li>
+                        <li className="header__menu-item"><a href="#contacto" onClick={() => setMenuOpen(false)}>CONTACTO</a></li>
                     </ul>
                 </div>
 
