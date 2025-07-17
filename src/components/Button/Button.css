@@ -1,0 +1,26 @@
+.button {
+  background-color: var(--clr-primary);
+  color: var(--clr-text);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #fa5a04;
+  color: var(--clr-text);
+  font-weight: bold;
+}
+
+.button:focus {
+  outline: 2px solid #333;
+}
+
+.button--disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
