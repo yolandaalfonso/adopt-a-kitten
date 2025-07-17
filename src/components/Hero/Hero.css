@@ -31,3 +31,41 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
   
+  @media (max-width: 1024px) {
+  .hero__title {
+    font-size: 4em;
+    top: 28%;
+  }
+
+  .hero__subtitle {
+    font-size: 1em;
+    top: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 3em;
+    top: 26%;
+  }
+
+  .hero__subtitle {
+    font-size: 0.95em;
+    top: 62%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 2.4em;
+    top: 24%;
+  }
+
+  .hero__subtitle {
+    font-size: 0.9em;
+    top: 64%;
+    padding: 0 1.5rem;
+    line-height: 1.4;
+  }
+}
