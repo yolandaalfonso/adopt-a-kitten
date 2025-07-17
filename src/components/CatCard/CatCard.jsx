@@ -9,7 +9,6 @@ const Card = ({cat, isFavorite, onToggleFavorite}) => {
   const { t} = useTranslation();
   const { url: image, breeds } = cat;
   const name = breeds?.[0]?.name || 'A Kitten!';
-  const title = breeds?.[0]?.temperament || 'An adorable kitten!';
   const description = breeds?.[0]?.description || 'Description not available!';
   // Function to handle the favorite toggle
   const handleToggle = () => {
@@ -30,7 +29,6 @@ const Card = ({cat, isFavorite, onToggleFavorite}) => {
       </div>
       <img className="cat-card__image" src={image} alt={name} /> {/* Use 'name' for alt text */}
       <h3 className="cat-card__name">{name}</h3>
-      <h3 className="cat-card__title">{title}</h3>
       <p className="cat-card__description">{description}</p>
       <div className="cat-card__button-container">
         <Button

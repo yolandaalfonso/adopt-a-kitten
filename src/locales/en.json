@@ -56,5 +56,7 @@
         "enviado":"Sent successfully!",
         "gracias":"Thank you for your interest in adopting"
     },
-    "adopt":"Adopt me"
+    "adopt":"Adopt me",
+    "favTitle": "My favorite kittens",
+    "favText":"You haven't added any kittens to your favorites yet. What are you waiting for? Go to the homepage and find adorable kittens!"
 }

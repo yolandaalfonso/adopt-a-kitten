@@ -11,8 +11,8 @@ i18n
             en: { translation: en },
             es: { translation: es },
         },
-        lng: 'en', // Idioma por defecto
-        fallbackLng: 'en',
+        lng: 'es', // Idioma por defecto
+        fallbackLng: 'es',
         interpolation: {
             escapeValue: false
         }
