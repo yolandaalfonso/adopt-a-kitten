@@ -19,5 +19,25 @@
         "politica":"Privacy Policy",
         "cookies":"Cookies policy",
         "desarrollado":"Developed by Factoría F5"
+    },
+      "hero":{
+        "message1": "Discover kittens looking for a second chance.",
+        "message2":"Adopt, save a life and your ideal companion."
+
+    },
+      "proceso":{
+        "como":"What is the process?",
+        "paso1":"Choose your future kitten.",
+        "paso2":"Fill out the adoption form.",
+        "paso3":"We chat with you to make sure there's a perfect match.",
+        "paso4":"Adopt and start a new adventure together!"
+    },
+     "Testimonios":{
+        "testimonios":"Testimonials",
+        "testimonio1":"Adopting Nube was the best decision I could have made; he fills the house with love and mischief.",
+        "testimonio2":"Thanks to MiauMatch, I found my perfect furry companion: Leo never leaves my side.",
+        "testimonio3":"I never imagined how much love a rescued kitten could give; Luna changed my life.",
+        "testimonio4":"The adoption was easy, transparent, and now I have a faithful friend who waits for me every day.",
+        "testimonio5":"Since Mimo arrived, I haven't stopped smiling — he's pure joy on four paws!"
     }
 }
