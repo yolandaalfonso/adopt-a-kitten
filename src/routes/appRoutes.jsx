@@ -1,6 +1,7 @@
 import HomePage from "../pages/HomePage/HomePage"
 import AdoptPage from "../pages/AdoptPage/AdoptPage";
 import Layout from "../components/Layout/Layout";
+import FavoritesPage from "../pages/FavoritesPage/FavoritesPage";
 
 /*
     The "routes" folder is typically where we centralize
@@ -26,6 +27,11 @@ const appRoutes = [
     {
         path: '/adopt',
         element: <Layout><AdoptPage /></Layout>
+        // name:"Adopt"
+    },
+    {
+        path: '/favorites',
+        element: <Layout><FavoritesPage /></Layout>
         // name:"Adopt"
     }
     // Add more OBJECTS as our application expands.
