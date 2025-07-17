@@ -56,5 +56,7 @@
         "enviado":"¡Enviado correctamente!",
         "gracias":"Gracias por tu interés en adoptar"
     },
-    "adopt":"Adóptame"
+    "adopt":"Adóptame",
+    "favTitle": "Mis gatitos favoritos",
+    "favText":"Aún no has añadido ningún gatito a tus favoritos. ¡A qué esperas para ir a la página de inicio y encontrar adorables gatitos!"
 }

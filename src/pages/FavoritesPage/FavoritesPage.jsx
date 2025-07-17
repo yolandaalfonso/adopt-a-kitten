@@ -3,6 +3,7 @@ import React from "react";
 import { useFavorites } from "../../context/useFavorites"; // This import our 'Custom Hook'
 import CatCard from "../../components/CatCard/CatCard";
 import "./FavoritesPage.css";
+import { useTranslation } from 'react-i18next'
 
 /**
  * It should displays all the cats the user has marked as favorites. This page will
@@ -13,7 +14,7 @@ import "./FavoritesPage.css";
 const FavoritesPage = () => {
   // Access the 'favorites state' and the 'dispatch function' from the 'context'
   const { favorites, dispatch } = useFavorites();
-
+    const { t} = useTranslation();
   /**
    * Re-use the 'handleToggleFavorite' logic from 'CatsSlider' to keep it consistent.
    * This allows users to unfavorite directly from the 'FavoritesPage'.
@@ -32,12 +33,11 @@ const FavoritesPage = () => {
 
   return (
     <div className="favorites-page-container">
-      <h2 className="favorites-page-title">Mis gatitos favoritos</h2>
+      <h2 className="favorites-page-title">{t('favTitle')}</h2>
 
       {favorites.length === 0 ? (
         <p className="no-favorites-message">
-          Aún no has añadido ningún gatito a tus favoritos. ¡A qué esperas para 
-          ir a la página de inicio y encontrar adorables gatitos!
+         {t('favText')}
         </p>
       ) : (
         <div className="favorites-grid">
