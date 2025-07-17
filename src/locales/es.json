@@ -43,7 +43,7 @@
     "form":{
         "error":{
             "name":"Nombre inválido. Solo letras y espacios (2-50 caracteres).",
-            "mail":"Correo electrónico inválido.",
+            "email":"Correo electrónico inválido.",
             "phone":"Teléfono inválido. Solo números (7-15 dígitos).",
             "message":"El mensaje debe tener entre 10 y 300 caracteres."
         },
