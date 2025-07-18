@@ -1,22 +1,34 @@
 :root {
-    --clr-bg: #FFFFFF;
-    --clr-text: #6B4F3B;
-    --clr-primary: #FFB085;
-    --clr-secunday: #B7D6B6;
-    --clr-card:#FFFFFF;
-  }
-  .dark {
-    --clr-bg: #1A1A1A;
-    --clr-text: #F0E7DD;
-    --clr-primary: #6B4F3B;
-    --clr-secunday: #333333;
-    --clr-card: #2d2d2d;
-  }
+  --clr-bg: #ffffff;
+  --clr-text: #6b4f3b;
+  --clr-primary: #ffb085;
+  --clr-secunday: #b7d6b6;
+  --clr-card: #ffffff;
+}
+.dark {
+  --clr-bg: #1a1a1a;
+  --clr-text: #f0e7dd;
+  --clr-primary: #6b4f3b;
+  --clr-secunday: #333333;
+  --clr-card: #2d2d2d;
+}
 
-  .home-container {
-    background-color: var(--clr-bg);
-    color: var(--clr-text);
-    min-height: 100vh;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
+.home-container {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*jjd*/
+.dark {
+  background-color: var(--clr-bg);
+}
+main {
+  background-color: var(--clr-bg);
+}
+.no-favorites-message,
+.favorites-page-title {
+  color: var(--clr-text);
+}
+/*jjd*/
